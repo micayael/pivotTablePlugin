@@ -11,7 +11,7 @@ if (jQuery().pivotUI) {
                 // callback
                 var execute = function(el, json){
 
-                    el.pivotUI(json.data, {
+                    el.pivotUI(json, {
                         dataClass: settings.dataClass,
                         rows: settings.rows,
                         cols: settings.cols,
@@ -20,6 +20,8 @@ if (jQuery().pivotUI) {
                         rendererName: settings.rendererName,
                         aggregatorName: settings.aggregatorName,
                         vals: settings.vals,
+                        rowOrder: settings.rowOrder,
+                        colOrder: settings.colOrder,
                         renderers: settings.renderers,
                         sorters: settings.sorters,
                         derivers: settings.derivers,
@@ -37,7 +39,7 @@ if (jQuery().pivotUI) {
 
                     $.getJSON(data.url, function (json) {
 
-                        execute(el, json);
+                        execute(el, json.data);
 
                     });
 
@@ -57,6 +59,8 @@ if (jQuery().pivotUI) {
             rendererName: 'Tabla',
             aggregatorName: 'Cuenta',
             vals: [],
+            rowOrder: 'key_a_to_z',
+            colOrder: 'key_a_to_z',
             derivers: $.pivotUtilities.derivers,
             derivedAttributes: {},
             sorters: {},
