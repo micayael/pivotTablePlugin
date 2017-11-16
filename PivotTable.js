@@ -40,7 +40,7 @@ if (jQuery().pivotUI) {
 
                     $.getJSON(data.url, function (json) {
 
-                        execute(el, json.data);
+                        execute(el, json);
 
                     });
 
