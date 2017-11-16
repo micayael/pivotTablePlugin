@@ -1,6 +1,6 @@
 {
   "name": "micayael-pivottablejs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Plugin para utilizar pivottable.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
