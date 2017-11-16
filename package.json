@@ -1,0 +1,23 @@
+{
+  "name": "micayael-pivottablejs",
+  "version": "1.0.1",
+  "description": "Plugin para utilizar pivottable.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/micayael/pivotTablePlugin.git"
+  },
+  "keywords": [
+    "DataTables",
+    "jQuery",
+    "plugins"
+  ],
+  "author": "micayael@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/micayael/pivotTablePlugin/issues"
+  },
+  "homepage": "https://github.com/micayael/pivotTablePlugin"
+}
