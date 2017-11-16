@@ -27,7 +27,8 @@ if (jQuery().pivotUI) {
                         derivers: settings.derivers,
                         derivedAttributes: settings.derivedAttributes,
                         rendererOptions: settings.rendererOptions,
-                        hiddenAttributes: settings.hiddenAttributes
+                        hiddenAttributes: settings.hiddenAttributes,
+                        onRefresh: settings.onRefresh
                     }, false, 'es');
                 };
 
