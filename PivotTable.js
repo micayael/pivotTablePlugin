@@ -78,6 +78,9 @@ if (jQuery().pivotUI) {
             mesesOrdenados: function(){
                 return $.pivotUtilities.sortAs(["Enero", "Febrero", "Marzo", "Abril", "Mayo",
                     "Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre", "Diciembre"])
+            },
+            diasOrdenados: function(){
+                return $.pivotUtilities.sortAs(["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"])
             }
         };
 
