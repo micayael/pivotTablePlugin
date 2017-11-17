@@ -1,7 +1,24 @@
 if (jQuery().pivotUI) {
     // Plugin para usar el pivottable.js
     (function ($) {
-        $.fn.pivotTable = function (data, options) {
+        $.fn.pivotTable = function (data, options, debug) {
+
+            if(debug !== undefined && debug){
+                var devConfig = {
+                    onRefresh: function(config) {
+                        var config_copy = JSON.parse(JSON.stringify(config));
+                        //delete some values which are functions
+                        delete config_copy["aggregators"];
+                        delete config_copy["renderers"];
+                        //delete some bulky default values
+                        delete config_copy["rendererOptions"];
+                        delete config_copy["localeStrings"];
+                        console.log(JSON.stringify(config_copy, undefined, 2));
+                    }
+                };
+
+                options = $.extend({}, devConfig, options);
+            }
 
             var settings = $.extend({}, $.fn.pivotTable.defaults, options);
             this.each(function (index, element) {
